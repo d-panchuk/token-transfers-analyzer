@@ -1,0 +1,18 @@
+apply plugin: 'java-library'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    compile 'org.web3j:core:3.1.1'
+    compile 'org.mongodb:mongo-java-driver:3.4.3'
+    compile 'org.apache.poi:poi-ooxml:3.17'
+    
+    testImplementation 'junit:junit:4.12'
+    testCompile 'org.assertj:assertj-core:3.8.0'
+}
